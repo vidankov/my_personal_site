@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка Вячеслава Данькова</title>
+    <style>
+        header, body, footer {
+            width: 1200px;
+            margin: 0px auto 0px auto;
+            font-family: Calibri;
+        }
+
+        header {
+            background-color: #3d84ad;
+            border-bottom-style: inset;
+            border-bottom-width: 2px;
+            border-bottom-color: #266c94;
+        }
+
+        ul.menu {
+            list-style: none;
+            line-height: 1.5rem;
+            font-size: 1.5rem;
+            padding: 10px 10px 22px 10px;
+        }
+
+            ul.menu li {
+                float: left;
+                background-color: #d4eefc;
+                padding: 5px;
+                border-style: outset;
+                border-width: 2px;
+                border-color: #266c94;
+            }
+
+                ul.menu li a {
+                    text-decoration: none;
+                }
+
+                ul.menu li:hover {
+                    border-style: inset;
+                }
+
+                ul.menu li:first-child {
+                    padding-left: 10px;
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+
+                ul.menu li:first-child,
+                ul.menu li:nth-child(2) {
+                    border-right-style: solid;
+                    border-right-width: 0px;
+                }
+
+                ul.menu li:last-child {
+                    padding-right: 10px;
+                    border-left-style: solid;
+                    border-left-width: 0px;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .contacts {
+            font-size: 1.5rem;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .contact_info {
+            width: 255px;
+            background-color: #d4eefc;
+            border-radius: 5px;
+        }
+
+        .contact_info ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .contact_info ul li a {
+            display: block;
+            width: 75px;
+            height: 75px;
+            float: left;
+            background-image: url("./sprite_for_study_site.png");
+            margin: 5px;
+        }
+
+        a.email {
+            background-position-x: 75px;
+        }
+
+        a.phone {
+            background-position-x: 150px;
+        }
+
+        footer {
+            background-color: #536975;
+        }
+
+        .copyright {
+            padding: 2px 5px 2px 2px;
+            color: #cfdbe3;
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href=".\index.html">На главную</a></li>
+                <li><a href=".\about_me.html">Обо мне</a></li>
+                <li><a href=".\my_services.html">Мои услуги</a></li>
+                <li><a href=".\contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class='clearfix'></div>
+    </header>
+
+    <h1>Свяжитесь со мной:</h1>
+
+    <section class="contact_info">
+        <ul>
+            <li>
+                <a href="mailto:vidankov@yandex.ru" class="email"></a>
+            </li>
+
+            <li>
+                <a href="tel:+79990000000" class="phone"></a>
+            </li>
+
+            <li>
+                <a href="https://vk.com/id863127" target="_blank" class="vk"></a>
+            </li>
+        </ul>
+        <div class='clearfix'></div>
+
+    </section>
+
+    <footer>
+        <p class="copyright">
+            дизайн и написание сайта &#xA9; 2025 г, Даньков Вячеслав Игоревич
+        </p>
+    </footer>
+
+</body>
+</html>
+</html>
